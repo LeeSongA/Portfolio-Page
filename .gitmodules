@@ -1,0 +1,7 @@
+[submodule "themes/agency"]
+	path = themes/agency
+	url = https://github.com/LeeSongA/hugo-agency-theme.git
+[submodule "public"]
+	path = public
+	url = git@github.com:LeeSongA/LeeSongA.github.io.git
+	branch = master
