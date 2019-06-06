@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://leesonga.github.io/"
 languageCode = "en-us"
-title = "Agency"
+title = "SongA/Portfolio-Page"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -17,9 +17,9 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Your name"
+  name = "Song-A Lee"
   description = "Your description"
-  # email = "your@email.com"
+  # email = "thhddk0317@ajou.ac.kr"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -33,7 +33,7 @@ googleAnalytics = ""
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    text = "Please visit [My Github](https://github.com/LeeSongA)"
 
   # Optional piwik tracking
   #[params.analytics.piwik]
@@ -46,13 +46,13 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "The Agency"
+    brand = "Lee Song A"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
-    services = "Services"
-    portfolio = "Portfolio"
+    profile = "Profile"
     about = "About"
-    team = "Team"
+    skills = "Skills"
+    portfolio = "Portfolio"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -67,43 +67,118 @@ googleAnalytics = ""
 
     # postpended links
     [[menu.postpend]]
-      url = "http://gohugo.io"
-      name = "External link"
+      url = "http://github.com/LeeSongA"
+      name = "Github"
       weight = 10
-
 
   # Hero section
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To Our Studio!"
+    title = "Welcome To My Portfolio Page!"
     subtitle = "It's nice to meet you"
     buttonText = "Tell me more"
 
-
-  # Services section
-  [params.services]
+  # Profile section
+  [params.profile]
     enable = true
-    title = "Services"
+    # Possibility to center items
+    #center = true
+    title = "My profile"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/profile'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.profile.members]]
+      img = "1(3).jpg"
+      name = "Song-A Lee"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      livesIn = "[Seoul, Republic of Korea](#some-maps-url)"
+      scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
+      bio = """Hi, I'm Song-A. I want to be an awesome DevOps with heaps of experience in the field of UX."""
+      social = [
+        ["fa-github", "https://github.com/LeeSongA"],
+        ["fa-hackerrank", "https://www.hackerrank.com/thddk0317"],
+        ["fa-home", "#"]
+      ]
+
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of my<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.png"
+      date = "March 2015 - August 2016"
+      title = "Dongguk University"
+      description = "Bachelor of Computer Engineering"
+
+    [[params.about.events]]
+      img = "2.png"
+      date = "March 2017"
+      title = "Ajou University"
+      description = "Bachelor of Software and Computer Engineering"
+
+    [[params.about.events]]
+      img = "3.png"
+      date = "September 2017 - December 2017"
+      title = "Blue Semester"
+      description = "Developing intelligent timetable recommendation application through camera recognition"
+
+    [[params.about.events]]
+      img = "4.png"
+      date = "December 2017 - February 2018"
+      title = "Embassy of M2soft Company"
+      description = "Full-time intern,<br>Android Development (Number Pad & Signature Pad)"
+
+    [[params.about.events]]
+      img = "5.png"
+      date = "July 2018 - August 2018"
+      title = "Blue ladder"
+      description = "Overseas experience,<br>Washington of University<br>STEP 3 week & Team project 1 week"  
+
+  # Skills section
+  [params.skills]
+    enable = true
+    title = "Skills"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-    [[params.services.row]]
+    [[params.skills.row]]
 
-    [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
+    [[params.skills.row.list]]
+      icon = "fa-code"
+      title = "Language"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
-    [[params.services.row.list]]
+    [[params.skills.row.list]]
       icon = "fa-laptop"
-      title = "Responsive Design"
+      title = "Web"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
-    [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
+    [[params.skills.row.list]]
+      icon = "fa-mobile"
+      title = "App"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
+    
+    [[params.skills.row.list]]
+      icon = "fa-pencil"
+      title = "Study"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
@@ -122,94 +197,6 @@ googleAnalytics = ""
       date = "Date"
       category = "Category"
       buttonText = "Close project"
-
-
-    # About section
-  [params.about]
-    enable = true
-    title = "About"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    endpoint = "Be part<br>of our<br>story!"
-
-    # The events will be listed from the top to the bottom.
-    # All images are stored under 'static/img/about'.
-    # Replace them with your own.
-    [[params.about.events]]
-      img = "1.jpg"
-      date = "2009-2011"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "2.jpg"
-      date = "March 2011"
-      title = "An Agency is Born"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "3.jpg"
-      date = "December 2012"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "4.jpg"
-      date = "July 2014"
-      title = "Phase Two Expansion"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-
-  # Team section
-  [params.team]
-    enable = true
-    # Possibility to center items
-    #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
-
-    # All team member's pictures are stored under 'static/img/team'.
-    # Replace them with your own too.
-    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
 
   # Client section
     [params.clients_list]
@@ -264,7 +251,7 @@ She worked at Pied Piper for years until they went belly up."""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+    email = "thhddk0317@ajou.ac.kr"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
@@ -305,19 +292,19 @@ She worked at Pied Piper for years until they went belly up."""
     copyright = "Published under the Apache License 2.0."
 
     [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "#"
-      title = "Twitter"
+      icon = "fa-github"
+      link = "https://github.com/LeeSongA"
+      title = "Github"
 
     [[params.footer.social]]
-      icon = "fa-facebook"
-      link = "#"
-      title = "Facebook"
+      icon = "fa-hackerrank"
+      link = "https://www.hackerrank.com/thddk0317"
+      title = "Hackerrank"
 
     [[params.footer.social]]
-      icon = "fa-linkedin"
+      icon = "fa-home"
       link = "#"
-      title = "LinkedIn"
+      title = "Home"
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"
