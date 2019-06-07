@@ -92,7 +92,7 @@ googleAnalytics = ""
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.profile.members]]
-      img = "1.jpg"
+      img = "I.jpg"
       name = "Song-A Lee"
       position = "Lead Designer"
       reportsTo = "CTO"
