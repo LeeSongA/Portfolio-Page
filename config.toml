@@ -159,25 +159,25 @@ googleAnalytics = ""
     [[params.skills.row]]
 
     [[params.skills.row.list]]
-      icon = "fa-code"
+      icon = "fas fa-code"
       title = "Language"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
     [[params.skills.row.list]]
-      icon = "fa-laptop"
+      icon = "fas fa-laptop"
       title = "Web"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
     [[params.skills.row.list]]
-      icon = "fa-mobile"
+      icon = "fas fa-mobile"
       title = "App"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
     
     [[params.skills.row.list]]
-      icon = "fa-pencil"
+      icon = "fas fa-pencil-alt"
       title = "Study"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
@@ -292,17 +292,17 @@ googleAnalytics = ""
     copyright = "Published under the Apache License 2.0."
 
     [[params.footer.social]]
-      icon = "fa-github"
+      icon = "fab fa-github"
       link = "https://github.com/LeeSongA"
       title = "Github"
 
     [[params.footer.social]]
-      icon = "fa-hackerrank"
+      icon = "fab fa-hackerrank"
       link = "https://www.hackerrank.com/thddk0317"
       title = "Hackerrank"
 
     [[params.footer.social]]
-      icon = "fa-home"
+      icon = "fas fa-home"
       link = "#"
       title = "Home"
 
