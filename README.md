@@ -174,5 +174,7 @@
 - [Giraffe Academy의 영상: Windows에서 Hugo설치하기](https://gohugo.io/getting-started/installing#windows)
 - [Hugo 공식 깃헙](https://github.com/gohugoio/hugo/releases)
 - [Hugo Theme](https://themes.gohugo.io)
+- [Hugo Theme - agency](http://themes.gohugo.io/theme/agency)
+- [hugo-agency-theme 사용 방법](https://themes.gohugo.io/agency/)
 - [Generating a new SSh key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your Github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
