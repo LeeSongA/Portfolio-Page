@@ -105,9 +105,9 @@ googleAnalytics = ""
       # For bio markdown and even multiline strings are available.
       bio = """Hi, I'm Song-A. I want to be an awesome DevOps with heaps of experience in the field of UX."""
       social = [
-        ["fa-github", "https://github.com/LeeSongA"],
-        ["fa-hackerrank", "https://www.hackerrank.com/thddk0317"],
-        ["fa-home", ""]
+        ["fab fa-github", "https://github.com/LeeSongA"],
+        ["fab fa-hackerrank", "https://www.hackerrank.com/thddk0317"],
+        ["fas fa-home", ""]
       ]
 
   # About section
